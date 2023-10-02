@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="center">
+        <h1>BMI Calculator</h1>
+        <h5>Enter your weight and height below to check your BMI results</h5>
+
+        <form id="form">
+          <label for="weight">Berat badan (KG):</label><br />
+          <input
+            type="number"
+            id="berat"
+            placeholder="contoh : 60 KG"
+            min="1"
+          /><br />
+          <label for="height">Tinggi badan (CM):</label><br />
+          <input
+            type="number"
+            id="tinggi"
+            placeholder="contoh 180 CM"
+            min="1"
+          /><br /><br />
+          <button id="btn">Calculate</button>
+        </form>
+
+        <div class="result" id="result">
+          <!-- Your BMI is 21.5 which means you are Normal -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
